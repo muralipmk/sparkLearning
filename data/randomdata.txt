@@ -1,0 +1,56 @@
+this is murali working on the spark streaming.
+Very much interested in the feild of data analytics and machine leaning.
+I love working with distributed systems.
+I dont have the much patients to creat this file randomly getting data from some source and adding here.
+U need not read this file. any ways its fine.
+Contrary to popular belief, the most difficult part of software development is not in the actual coding of systems but rather in the capture and translation of vague, incomplete, and often contradictory business requirements. Errors introduced early in the communication of requirements are the most costly system errors to correct, leading to patch development and increased maintenance costs. Nowhere is this more evident than in the attempt to capture and code complex business rules.
+
+Business rules are defined in many ways,
+but in general can be best thought o
+f as decision points in business proce
+sses. Business rules are described by
+"if-then-else"-type logic,
+where if a specific set of business
+conditions is met, then a
+particular action is performed; else (otherwise,) some other action
+may be performed. For example, consider a company offering a promotional
+rate for its services. The promotion is in effect for a limited time, for
+a specific set of products or services. The back-end processing systems
+must be capable of not only correctly applying the promotional rate to new
+customers but also of discontinuing the promotion at the appropriate
+time. These behaviors are driven by business rules.
+
+The tricky part comes when these rules are coded into software programs.
+The majority of programming languages
+do not directly support the idea of independent
+rules matched and fired as a result of a set of
+conditions — this in spite of the large number of
+business processes that are rule-driven (see below).
+this is murali working on the spark streaming.
+Very much interested in the feild of data analytics and machine leaning.
+I love working with distributed systems.
+I dont have the much patients to creat this file randomly getting data from some source and adding here.
+U need not read this file. any ways its fine.
+Contrary to popular belief, the most difficult part of software development is not in the actual coding of systems but rather in the capture and translation of vague, incomplete, and often contradictory business requirements. Errors introduced early in the communication of requirements are the most costly system errors to correct, leading to patch development and increased maintenance costs. Nowhere is this more evident than in the attempt to capture and code complex business rules.
+
+Business rules are defined in many ways,
+but in general can be best thought o
+f as decision points in business proce
+sses. Business rules are described by
+"if-then-else"-type logic,
+where if a specific set of business
+conditions is met, then a
+particular action is performed; else (otherwise,) some other action
+may be performed. For example, consider a company offering a promotional
+rate for its services. The promotion is in effect for a limited time, for
+a specific set of products or services. The back-end processing systems
+must be capable of not only correctly applying the promotional rate to new
+customers but also of discontinuing the promotion at the appropriate
+time. These behaviors are driven by business rules.
+
+The tricky part comes when these rules are coded into software programs.
+The majority of programming languages
+do not directly support the idea of independent
+rules matched and fired as a result of a set of
+conditions — this in spite of the large number of
+business processes that are rule-driven (see below).
