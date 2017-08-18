@@ -17,7 +17,6 @@ public class WordCount {
 
     public static void main(String[] args){
 
-
         Logger.getLogger("org").setLevel(Level.ERROR);
         Logger.getLogger("akka").setLevel(Level.ERROR);
         //Set up the spark configuration.
@@ -32,11 +31,18 @@ public class WordCount {
         //Create Dstream of words using the flatMap.
         JavaDStream<String> words= line.flatMap(w -> Arrays.asList(w.split(" ")).iterator());
 
-        JavaPairDStream<String, Integer> word_count= words.mapToPair(wc -> new Tuple2<>(wc,1))
-                .reduceByKey((wc1,wc2) -> wc1 + wc2);
+        JavaPairDStream<String, Integer> word_count= words.mapToPair(wc -> new Tuple2<>(wc,1));
+        JavaPairDStream<String, Integer> stream_count= word_count.reduceByKey((wc1,wc2) -> wc1 + wc2);
 
         //Print the Dstream work count.
-        word_count.print();
+        stream_count.print();
+
+        //Sliding window demonstration.
+        JavaPairDStream<String,Integer> windowWordCount= word_count.reduceByKeyAndWindow((ws1, ws2) -> ws1 + ws2, Durations.seconds(15),Durations.seconds(3));
+
+        System.out.println("Window stream count");
+        windowWordCount.print();
+
         streamingContext.start();
         try {
             streamingContext.awaitTermination();
